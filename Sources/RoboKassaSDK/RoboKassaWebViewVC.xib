@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoboKassaWebViewVC" customModule="RoboKassaSDK">
+            <connections>
+                <outlet property="containerWebView" destination="wff-7J-dcd" id="B56-bV-Qch"/>
+                <outlet property="view" destination="ihY-zv-rDc" id="KnO-4f-0QW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ihY-zv-rDc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-Z8-Z6b">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wff-7J-dcd" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kce-aX-JIP" userLabel="MainStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
+                            <subviews>
+                                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-tD-sKc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="barTintColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <textAttributes key="titleTextAttributes">
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </textAttributes>
+                                    <textAttributes key="largeTitleTextAttributes">
+                                        <color key="textColor" systemColor="tintColor"/>
+                                    </textAttributes>
+                                    <items>
+                                        <navigationItem title="Advertising" largeTitleDisplayMode="always" style="editor" id="j4C-3P-LM6">
+                                            <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="6X1-Qp-zl0">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                            <barButtonItem key="rightBarButtonItem" id="b8o-Dc-dfv">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                        </navigationItem>
+                                    </items>
+                                </navigationBar>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frn-tR-9Sr">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odP-MV-KgM">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="804"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
+                                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlt-4O-VYH">
+                                    <rect key="frame" x="0.0" y="848" width="414" height="0.0"/>
+                                    <items>
+                                        <barButtonItem title="Item" image="backward.fill" catalog="system" id="WTN-6v-l7c"/>
+                                        <barButtonItem style="plain" systemItem="flexibleSpace" id="hs8-os-wLM"/>
+                                        <barButtonItem id="WQk-ha-Z7l"/>
+                                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TIw-DB-aDb"/>
+                                        <barButtonItem title="Item" image="forward.fill" catalog="system" id="BLZ-Kh-3H8"/>
+                                    </items>
+                                </toolbar>
+                            </subviews>
+                            <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="kce-aX-JIP" firstAttribute="top" secondItem="wff-7J-dcd" secondAttribute="top" id="19K-on-kK8"/>
+                        <constraint firstItem="kce-aX-JIP" firstAttribute="leading" secondItem="wff-7J-dcd" secondAttribute="leading" id="G5b-qB-OlE"/>
+                        <constraint firstAttribute="trailing" secondItem="kce-aX-JIP" secondAttribute="trailing" id="bcJ-rS-baK"/>
+                        <constraint firstAttribute="bottom" secondItem="kce-aX-JIP" secondAttribute="bottom" id="m15-49-ev3"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="CdA-oc-UYS">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="X9L-Ts-KNa">
+                    <rect key="frame" x="0.0" y="132" width="414" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="s6M-Yf-jzJ"/>
+                    </constraints>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOK-Tc-hmP" userLabel="LoadingView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GTf-tN-BD7"/>
+            <color key="backgroundColor" red="0.074509803920000006" green="0.1215686275" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GTf-tN-BD7" firstAttribute="trailing" secondItem="Jft-Z8-Z6b" secondAttribute="trailing" id="5iH-OD-Zlu"/>
+                <constraint firstItem="CdA-oc-UYS" firstAttribute="centerY" secondItem="ihY-zv-rDc" secondAttribute="centerY" id="60y-fv-9Nv"/>
+                <constraint firstItem="wff-7J-dcd" firstAttribute="top" secondItem="Jft-Z8-Z6b" secondAttribute="bottom" id="71O-oR-FHO"/>
+                <constraint firstItem="X9L-Ts-KNa" firstAttribute="top" secondItem="odP-MV-KgM" secondAttribute="top" constant="40" id="P5V-V5-JxO"/>
+                <constraint firstItem="CdA-oc-UYS" firstAttribute="centerX" secondItem="ihY-zv-rDc" secondAttribute="centerX" id="RN4-jI-1mf"/>
+                <constraint firstItem="iOK-Tc-hmP" firstAttribute="top" secondItem="Jft-Z8-Z6b" secondAttribute="bottom" id="SON-z6-W9k"/>
+                <constraint firstItem="Jft-Z8-Z6b" firstAttribute="top" secondItem="ihY-zv-rDc" secondAttribute="top" id="ToI-LU-oby"/>
+                <constraint firstItem="X9L-Ts-KNa" firstAttribute="trailing" secondItem="odP-MV-KgM" secondAttribute="trailing" id="h1K-mu-Kkj"/>
+                <constraint firstItem="wff-7J-dcd" firstAttribute="top" secondItem="GTf-tN-BD7" secondAttribute="top" id="hnH-iK-NmH"/>
+                <constraint firstAttribute="bottom" secondItem="wff-7J-dcd" secondAttribute="bottom" id="iO8-pW-vQ0"/>
+                <constraint firstAttribute="bottom" secondItem="iOK-Tc-hmP" secondAttribute="bottom" id="iZf-n4-wKb"/>
+                <constraint firstItem="iOK-Tc-hmP" firstAttribute="leading" secondItem="GTf-tN-BD7" secondAttribute="leading" id="ieC-tQ-t16"/>
+                <constraint firstItem="Jft-Z8-Z6b" firstAttribute="leading" secondItem="GTf-tN-BD7" secondAttribute="leading" id="j5f-Bu-11E"/>
+                <constraint firstAttribute="trailing" secondItem="wff-7J-dcd" secondAttribute="trailing" id="k6c-qf-zHA"/>
+                <constraint firstItem="X9L-Ts-KNa" firstAttribute="leading" secondItem="odP-MV-KgM" secondAttribute="leading" id="q1W-XT-rcH"/>
+                <constraint firstItem="iOK-Tc-hmP" firstAttribute="trailing" secondItem="GTf-tN-BD7" secondAttribute="trailing" id="whi-IC-CV1"/>
+                <constraint firstItem="wff-7J-dcd" firstAttribute="leading" secondItem="ihY-zv-rDc" secondAttribute="leading" id="zSt-C3-pJI"/>
+            </constraints>
+            <point key="canvasLocation" x="-730.43478260869574" y="26.785714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
